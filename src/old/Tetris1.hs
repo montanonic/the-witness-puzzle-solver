@@ -1,3 +1,5 @@
+{- First attempt at representing tetris pieces in The Witness -}
+
 {-# LANGUAGE RecordWildCards #-}
 
 module Tetris1 where
