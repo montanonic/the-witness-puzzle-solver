@@ -1,0 +1,177 @@
+
+==================== FINAL INTERFACE ====================
+2016-09-25 00:57:49.228052 UTC
+
+interface main@main:Main 8001
+  interface hash: 6f11fc13726a8b6ec06140d1771e47fc
+  ABI hash: 1ec2d0f8d9a06fae27423bf4027e643b
+  export-list hash: 65803ffde71d1f0406084421d797095c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 42363b72c3acd13b8b69d7939ba42fa6
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.piece
+module dependencies: Tetris
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:System.IO eb1d40aa793a4047069a5023f2ebcfe3
+import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
+import  -/  Tetris ebf4afc44e3bad5bbd40d7f8a271f4d6
+  exports: ecf5372ba323fcd9af619ae01e63ac2c
+  Point 70728e214116d82d6375556572bccaba
+  PointOffset c74f36bc4150f2e6f19c7d01642c399c
+  TetrisPiece ac7f450e313e307a86ea51f819ed4300
+  offsets 02abeffa8a18ea156d27630bf5ab4928
+  origin 026b4b268244071cee3f63893b92f4b4
+  x e430cba35266b543b4a9363a4760735d
+  xOffset 6e5df8b330e9ffedb84c90d817f7add9
+  y af2ab06582de78f5af1c30822524fe4a
+  yOffset 558123a245ba78f91113859bde672115
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+5e161bb4097d07a2bd7c3d646a87ce20
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+421e2cb7b9952a90fa98eaa23ce69b15
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   eta) -}
+5ca9aae8b1fa510e4d7ba6c699a49ec7
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hello world"#) -}
+44737806b3a8f5683bb76006d0bbaffe
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+c5516e7c4c594320723966ce2774d796
+  piece :: Tetris.TetrisPiece
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.TetrisPiece Main.piece12 Main.piece1) -}
+b7401c9b1acda28980d1e335ee5af108
+  piece1 :: [Tetris.PointOffset]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Tetris.PointOffset
+                   Main.piece11
+                   Main.piece2) -}
+6a0657702c3aa466efbee828927e80e0
+  piece10 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Int) ->
+                 case ds of wild { GHC.Types.I# x ->
+                 GHC.Types.I# (GHC.Prim.+# x 1#) }) -}
+34178db4d2a102fdc28e0a4c1ad83087
+  piece11 :: Tetris.PointOffset
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.PointOffset
+                   (GHC.Base.id @ GHC.Types.Int)
+                   (GHC.Base.id @ GHC.Types.Int)) -}
+25c50e4a0b5e84c9f9ec0be5255da45d
+  piece12 :: GHC.Base.Maybe Tetris.Point
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ Tetris.Point Main.piece13) -}
+d3a97c7612d8e88b9be1c546e083b157
+  piece13 :: Tetris.Point
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.Point Main.piece14 Main.piece14) -}
+830a6c9871459a1d5ad20aa174ab8c97
+  piece14 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+882ac3b30ab8a48f3354a1d6c84df478
+  piece2 :: [Tetris.PointOffset]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Tetris.PointOffset
+                   Main.piece9
+                   Main.piece3) -}
+e82975cddf6775c399230bf35c0ce991
+  piece3 :: [Tetris.PointOffset]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Tetris.PointOffset
+                   Main.piece7
+                   Main.piece4) -}
+e8e583125c0701a6f32fa1f0acb8c48f
+  piece4 :: [Tetris.PointOffset]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Tetris.PointOffset
+                   Main.piece5
+                   (GHC.Types.[] @ Tetris.PointOffset)) -}
+0249bf1502cad49f62b82eb88373ec00
+  piece5 :: Tetris.PointOffset
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.PointOffset
+                   Main.piece6
+                   (GHC.Base.id @ GHC.Types.Int)) -}
+eec365333b1841174836e8a7eb62be2f
+  piece6 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Int) ->
+                 case ds of wild { GHC.Types.I# x ->
+                 GHC.Types.I# (GHC.Prim.+# x 3#) }) -}
+c99701ddbc93ca93c5dec8fd4f8c4368
+  piece7 :: Tetris.PointOffset
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.PointOffset
+                   Main.piece8
+                   (GHC.Base.id @ GHC.Types.Int)) -}
+e25c0ab4a2810a61633affdf3220e374
+  piece8 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: GHC.Types.Int) ->
+                 case ds of wild { GHC.Types.I# x ->
+                 GHC.Types.I# (GHC.Prim.+# x 2#) }) -}
+50be4a3a569c8eae80fda0b5e4489ff2
+  piece9 :: Tetris.PointOffset
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Tetris.PointOffset
+                   Main.piece10
+                   (GHC.Base.id @ GHC.Types.Int)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
