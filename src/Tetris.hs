@@ -32,14 +32,14 @@ that the piece is not placed on the board.
 
 XXXX
 would be represented as
-TetrisPiece { origin = Nothing,
-              offsets = [ Point { x = id, y = id }
-                        , Point { x = (+ 1), y = id }
-                        , Point { x = (+ 2), y = id }
-                        , Point { x = (+ 3), y = id }
+TetrisPiece { origin = Nothing
+            , offsets = [ PointOffset { xOffset = id, yOffset = id }
+                        , PointOffset { xOffset = (+ 1), yOffset = id }
+                        , PointOffset { xOffset = (+ 2), yOffset = id }
+                        , PointOffset { xOffset = (+ 3), yOffset = id }
                         ]
             }
-that is, it is a piece that starts at the origin and which contains 3 additional
+that is, it is a piece that starts anywhere, and which contains 3 additional
 blocks along its x-axis, contiguously.
 
 A vertically oriented piece would be the same, except instead of x-offsets, it
